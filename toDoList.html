@@ -8,11 +8,8 @@
   <style>
    body {
     font-family: Arial, sans-serif;
-    background-image: url('sketch-6987522_640.jpg'); 
-    background-size: cover;
+    background-image: url('wreath-6475469_1280.png'); 
     background-position: center;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,13 +20,14 @@
       text-align: center; 
     }
     .todo-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
     }
+    
 
     input[type="text"] {
     width: 70%;
@@ -38,43 +36,13 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     }
-
-    button {
-    padding: 8px 20px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 4px;
-    }
-
-    button:hover {
-    background-color: #0056b3;
-    }
-
-    ul {
-    list-style-type: none;
-    padding: 0;
-    }
-
-    li {
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    cursor: pointer;
-    }
-
-    li:hover {
-    background-color: #e9e9e9;
-    }
   </style>
 </head>
 <body>
   <div class="todo-container">
     <h2>Check List</h2>
-    <input type="text" id="todo-input" placeholder="Enter a new task"> 
-    <button id="add-btn" type="button" class="btn btn-info">Add to List</button>
+    <input type="text" id="todo-input" placeholder="Enter a new to-do "> 
+    <button id="add-btn" type="button" class="btn btn-success">Add to List</button>
     <ul id="todo-list">
     </ul>
   </div>
