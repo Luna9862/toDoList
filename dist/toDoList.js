@@ -1,11 +1,12 @@
+"use strict";
 document.addEventListener('DOMContentLoaded', function () {
-    var todoInput = document.getElementById('todo-input');
-    var addBtn = document.getElementById('add-btn');
-    var todoList = document.getElementById('todo-list');
+    const todoInput = document.getElementById('todo-input');
+    const addBtn = document.getElementById('add-btn');
+    const todoList = document.getElementById('todo-list');
     function addTodo() {
-        var todoText = todoInput.value.trim();
+        const todoText = todoInput.value.trim();
         if (todoText !== '') {
-            var li = document.createElement('li');
+            const li = document.createElement('li');
             li.textContent = todoText;
             li.addEventListener('click', function () {
                 this.remove();
